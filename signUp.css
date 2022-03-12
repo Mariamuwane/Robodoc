@@ -10,12 +10,19 @@
 
 } */ 
 
+.logo{
+    width: 291px;
+    height: 121px; 
+    margin:25px 0 0 70px;
+}
+
 .container{  
     padding-top: 5vh;
     padding-bottom: 12.5vh;
     padding-left: 5vw;
     padding-right: 12.5vw;
     margin: 0 12.5vw;
+    items:center;
 }
 
 .select{
@@ -84,7 +91,9 @@
     text-align: center; 
     border-bottom: 1px solid #FF1616; 
     line-height: 0.1em;
-    margin: 10px 0 20px;
+    margin: 10px 20px;
+    /* margin-left:auto;
+    margin-right:auto; */
     font-size:36px;
 }
 
@@ -114,7 +123,7 @@ input{
     color:#FF1616;
 }
 
-.deets button{
+ .deets button{
     padding: 15px 96px;
     background-color: #FF1616;
     border-radius:14px;
@@ -135,4 +144,52 @@ input{
 .bottom-text a{
     color: #FF1616;
     text-decoration:none;
+}
+
+.welcome{
+    color:#FF1616;
+    margin-bottom:50px;
+    text-align:center;
+
+}
+
+.inForm{
+    color:#FF1616;
+    box-shadow: 0px 3px 5px 0px #42413d;
+    padding:20px;
+    border-radius:20px;
+    align-items:center;
+    justify-items:center;
+    width:50%;
+    margin-bottom:50px;
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.inForm input{
+    width:100%;
+}
+
+.logbotton{
+    padding:15px 96px 15px 96px;
+    background-color: #FF1616;
+    border-radius:14px;
+    color:white;
+    margin:50px 50px 50px 70px;
+}
+
+.login{
+    text-align:center;
+}
+
+.login a{
+    display:inline-block;
+    text-decoration:none;
+    color:#FF1616;
+    text-align:center;
+    font-weight:600;
+    margin:20px 0px 20px 0px;
+
 }

@@ -8,52 +8,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <link href="signUp.css" rel="stylesheet">
     <title>Robodoc Login</title>
-    <style>
-        /* logo */
-        .logo{
-        position: absolute;
-        width: 148.7px;
-        height: 56.03px;
-        left: 120px;
-        top: 61.53px;
-
-        /* background: url(Asset 5.png);
-        transform: rotate(-0.2deg); */
-        }
-
-    </style>
 </head>
 <body>
     <div>
         <img class="logo" src="Assets/Asset 7.png">
     </div>
-    <div class="container">
-        <div>
+    <div class="container" style=" display: block;
+    text-align: center;">
+        <div class="welcome">
             <p>Welcome</p>
             <h3>Login to your account</h3>
         </div>
         <div>
-            <form>
-                <div class="email">
-                    <p>Email Address</p>
-                    <input type="email" name="email">
+            <form style="display: inline-block; align-items: center;">
+                <div class="inForm">
+                    <div class="email">
+                        <p>Email Address</p>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="password">
+                        <p>Password</p>
+                        <input type="password" name="password">
+                    </div>
+                    <div>
+                        <button class="logbotton">Login</button>
+                    </div>
+
                 </div>
-                <div class="password">
-                    <p>Password</p>
-                    <input type="password" name="password">
+                <div class="login">
+                    <div class="forgot">
+                        <a class="forgotten" href="#">Forgot Password?</a>
+                    </div>
+                    <div class="noAcct">
+                        <a class="signUp" href="index.html">I don’t have an account? Sign up</a>
+                    </div>
+
                 </div>
-                <div>
-                    <button>Login</button>
-                </div>
-                <div class="forgot">
-                    <a class="forgotten">Forgotten Password?</a>
-                </div>
-                <div>
+                <div class="or">
                     <div class="line"></div>
-                    <p>or</p>
+                    <p style="font-size: 24px; margin-left: 70px;"><span>or</span></p>
                     <div class="line"></div>
                 </div>
-                <div class="social-media">
+                <div class="social-media" style="margin-left: 100px;">
                     <div class="sm-left">
                         <a href="#"><i class="fab fa-google"></i>   Login with Google</a>
                     </div>
