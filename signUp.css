@@ -19,7 +19,7 @@
 .container{  
     padding-top: 5vh;
     padding-bottom: 12.5vh;
-    padding-left: 5vw;
+    padding-left: 1vw;
     padding-right: 12.5vw;
     margin: 0 12.5vw;
     items:center;
@@ -45,7 +45,18 @@
     display:inline-flex;
     width: 900px;
     min-width: 500px;
+    /* margin:30px 50px 20px 50px; */
+}
+
+.social-media1{
     margin:30px 50px 20px 50px;
+
+}
+
+.social-media2{
+    margin:30px 50px 20px 150px;
+    padding:0 0 0 100px;
+
 }
 
 .social-media a{
