@@ -107,7 +107,7 @@
   /* width:80%; */
   background-repeat: no-repeat;
   background-size:100% 70%;
-  margin-bottom: 150px;
+  margin-bottom: 20px;
   margin-top:20px;
   /* text-align:center; */
   position: relative;
@@ -132,12 +132,39 @@
 
 .section2{
     position: relative;
-
+    text-align:center;
+    margin-bottom:50px;
+    margin-right:auto;
+    margin-left:auto;
 }
 
 div.section2 h2 p button{
     position: absolute;
     text-align:center;
+}
+
+.section2 h2{
+    color: #FF1616;
+    font-size:24px;
+    font-weight:600;
+}
+
+.section2 P{
+    color:#1564FF;
+    font-size:16px;
+    font-weight:400;
+}
+
+.section2 button{
+    font-size:18px;
+    font-weight:600;
+    padding: 13px 35px;
+	border-radius: 150px;
+	background-color: #FF1616;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out 0s;
 }
 
 .footer{
