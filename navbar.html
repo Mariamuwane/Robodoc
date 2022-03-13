@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		@import url(
+'https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+		/* First make all margin and padding 0 */
+		/* * {
+			margin: 0px;
+			padding: 0px;
+			background-color: rgb(19, 6, 6);
+		} */
+
+		/* Second work on image*/
+		header img {
+			display: block;
+			height: 84px;
+			cursor: pointer;
+			margin-right: auto;
+            margin-left: -25px;
+            margin-bottom: -7px;
+		}
+
+		/* Changes the styling of links if necessary */
+		li,
+		a,
+		button {
+			font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            font-weight:bold;
+			color: whitesmoke;
+			text-decoration: none;
+		}
+
+		/* Now start positioning the links and images
+		according to your convinence */
+		header {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 20px 10%;
+            background-color: white;
+		}
+
+		.navigate_links {
+			list-style: none;
+            margin-top: auto;
+		}
+
+		.navigate_links li {
+			display: inline-block;
+			padding: 10px 15px;
+            margin-left: 20px;
+		}
+
+		.navigate_links li a {
+			transition: all 0.3s ease-in-out 0s;
+            color: #C4C4C4;
+		}
+
+		/* Add some transition to make navigation
+		bar attractive */
+		.navigate_links li a:hover {
+			color: #FF1616;
+			border: 2px solid #C4C4C4;
+			box-shadow: 3px 3px 3px #FF1616, 3px 3px 3px #FF1616;
+			border-radius: 8px;
+			margin: 10px;
+			padding: 10px;
+		}
+
+		button {
+			margin-left: 70px;
+            margin-top: -5px;
+			padding: 9px 12px;
+			border-radius: 14px;
+			background-color: #FF1616;
+			color: white;
+			border: none;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out 0s;
+            
+		}
+
+		button:hover {
+			background-color: #C4C4C4;
+			color: #FF1616;
+		}
+
+        @media screen and (max-width: 600px) {
+            .topnav a, .signint {
+            float: none;
+            display: block;
+        }
+
+        .navigate_links a {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: none;
+        }
+    }
+
+    
+.imglogo{
+    width: 291px; 
+    height: 121px;
+    margin-left: 35px;
+} 
+.topnav {
+    position: relative;
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #C4C4C4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: white;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Centered section inside the top navigation */
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Right-aligned section inside the top navigation */
+  .right {
+    float: right;
+  }
+  
+  /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+  
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+
+.get-relief{
+    background-color:#FF1616;
+    padding:3px;
+    text-align: center;
+    max-width: 90px;
+    /* border: 10px; */
+    border-radius: 20px;
+    justify-content:center;
+    display:flex-inline;    
+}
+	</style>
+</head>
+
+<body>
+	<header class="topnav">
+		<img class="logo"
+			src="Assets/Asset 7.png"
+			alt="Logo">
+		<nav>
+			<ul class="navigate_links">
+				<li><a href="#" style="color: #FF1616;">About us</a></li>
+				<li><a href="#">How it works</a></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">Community</a></li>
+				<li><a href="#">Login</a></li>
+			</ul>
+		</nav>
+		<a class="signin" href="#">
+			<button>Get Relief</button>
+		</a>
+	</header>
+
+    
+    <div class=" container">
+        <nav class="topnav nav-hover" id="myNav">
+            <div class="nav-centered">
+                <!-- <li><a href="#home">Home</a></li> -->
+                <a id="#about" href="about" style="color: #FF1616;">About</a>
+                <a id="#hiw" href="howItWorks.html">How it works</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a id="#about" href="about">Community</a>
+                <a href="login.html">Log in</a>
+            </div>
+            
+                <a onclick="window.location.href='homepage.html'" style="float: right !important;" class="logo"><img class="imglogo" src="Assets/Asset 7.png"></a>
+            
+            <div class="right">
+                <a href="#" class="get-relief" style="float: right;">Get Relief</a>
+            </div>
+        </nav>
+    </div>
+</body>
+
+</html>
+
+

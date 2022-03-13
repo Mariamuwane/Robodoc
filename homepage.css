@@ -1,66 +1,104 @@
-.nav{
-    position: sticky;
-    overflow:hidden;
-    /* margin-top:50px; */
-    background-color: #ffffff;
-    /* z-index: 9; */
 
-}
+		@import url(
+'https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
-.logo{
-    /* float:left; */
-    margin-left: 35px;
-    /* width: 50px;
-    height: 100px;  */
-    /* color: #42413d; */
-    /* /* font: normal 20px "Open Sans", cursive; */
-    cursor: pointer;
-}
+		/* First make all margin and padding 0 */
+		/* * {
+			margin: 0px;
+			padding: 0px;
+			background-color: rgb(19, 6, 6);
+		} */
 
-.nav img{
-    width:200px;
-    height:100px;
-}
+		/* Second work on image*/
+		header img {
+			display: block;
+			height: 84px;
+			cursor: pointer;
+			margin-right: auto;
+            margin-left: -25px;
+            margin-bottom: -7px;
+		}
 
-.nav a{
-    float: left;
-    color: #C4C4C4;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight:bold;
-}
+		/* Changes the styling of links if necessary */
+		li,
+		a,
+		.get-relief {
+			font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            font-weight:bold;
+			color: whitesmoke;
+			text-decoration: none;
+		}
 
-.nav-link:hover{
-    opacity: 1;
-}
+		/* Now start positioning the links and images
+		according to your convinence */
+		header {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 20px 10%;
+            background-color: white;
+		}
 
-.navmenu{
-    float: none;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-  }
+		.navigate_links {
+			list-style: none;
+            margin-top: auto;
+            text-decoration:none !important;
+		}
 
-.right{
-    float:right;
-    position: relative;
-    margin-right: 4em;  
-    margin-top:7px;
-}
+		.navigate_links li {
+			display: inline-block;
+			padding: 10px 15px;
+            margin-left: 20px;
+		}
 
-.get-relief{
-    background-color:#FF1616;
-    padding:3px;
-    text-align: center;
-    max-width: 90px;
-    /* border: 10px; */
-    border-radius: 20px;
-    justify-content:center;
-    display:flex-inline;    
-}
+		.navigate_links li a {
+			transition: all 0.3s ease-in-out 0s;
+            color: #C4C4C4;
+		}
+
+		/* Add some transition to make navigation
+		bar attractive */
+		.navigate_links li a:hover {
+			color: #FF1616;
+			border: 2px solid #C4C4C4;
+			box-shadow: 3px 3px 3px #FF1616, 3px 3px 3px #FF1616;
+			border-radius: 8px;
+			margin: 10px;
+			padding: 10px;
+		}
+
+		.get-relief  {
+			margin-left: 70px;
+            margin-top: -5px;
+			padding: 9px 12px;
+			border-radius: 14px;
+			background-color: #FF1616;
+			color: white;
+			border: none;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out 0s;
+            
+		}
+
+		.get-relief:hover {
+			background-color: #C4C4C4;
+			color: #FF1616;
+		}
+
+        @media screen and (max-width: 600px) {
+            .topnav a, .signin {
+            float: none;
+            display: block;
+        }
+
+        .navigate_links a {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: none;
+        }
+    }
 
 .banner{
   background-image:url('Assets/Doctor 1.png');

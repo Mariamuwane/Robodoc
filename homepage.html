@@ -10,25 +10,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 <body>
-    <div class="navBar container">
-        <nav class="nav" id="myNav">
-            <div class="logo">
-                <a class="nav-link" onclick="window.location.href='homepage.html'"><img src="Assets/Asset 7.png"></a>
-            </div>
-            <div class="navmenu nav-link">
-                <!-- <li><a href="#home">Home</a></li> -->
-                <a id="#about" href="about" style="color: #FF1616;">About</a>
-                <a id="#hiw" href="howItWorks.html">How it works</a>
-                <a href="contact-us.html">Contact Us</a>
-                <a id="#about" href="about">Community</a>
-                <a href="login.html">Log in</a>
-            </div>
-            <div class="right">
-                <!-- <button type="submit" class="join"></button> -->
-                <a href="#" class="get-relief" style="float: right;">Get Relief</a>
-            </div>
-        </nav>
-    </div>
+	<header class="topnav">
+		<a onclick="window.location.href='homepage.html'"><img class="logo"
+			src="Assets/Asset 7.png"
+			alt="Logo"></a>
+		<nav>
+			<ul class="navigate_links">
+				<li><a href="#" style="color: #FF1616; text-decoration: none;">About us</a></li>
+				<li><a href="howItWorks.html" style="text-decoration: none;">How it works</a></li>
+				<li><a href="#" style="text-decoration: none;">Contact us</a></li>
+				<li><a href="#" style="text-decoration: none;">Community</a></li>
+				<li><a href="login.html" style="text-decoration: none;">Login</a></li>
+			</ul>
+		</nav>
+		<a class="signin" href="#">
+			<button class="get-relief">Get Relief</button>
+		</a>
+	</header>
 
     <section class="container-fluid">
         <div class="banner bg-image d-flex justify-content-center align-items-center" style="bottom: 8px;
